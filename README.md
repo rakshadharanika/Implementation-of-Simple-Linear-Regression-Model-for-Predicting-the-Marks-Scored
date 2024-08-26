@@ -28,12 +28,10 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.metrics import mean_absolute_error,mean_squared_error
-df=pd.read_csv('student_scores.csv')
-print(df)
-df.head(0)
-df.tail(0)
-print(df.head())
-print(df.tail())
+df=pd.read_csv('/content/student_scores.csv')
+df
+df.head()
+df.tail()
 x = df.iloc[:,:-1].values
 print(x)
 y = df.iloc[:,1].values
